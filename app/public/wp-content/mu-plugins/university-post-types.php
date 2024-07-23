@@ -2,6 +2,9 @@
  
 function university_post_types() {
   register_post_type('event', array(
+    'supports' => array(
+      'title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'
+    ),
     'rewrite' => array(
       'slug' => 'events'
     ),
